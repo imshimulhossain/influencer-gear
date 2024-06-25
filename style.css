@@ -40,6 +40,7 @@ a {
 .primary-button {
     background: var(--primary-color);
     color: var(--text-white);
+    font-weight: 500;
     padding: 10px 30px;
     border-radius: 25px;
     margin-bottom: 20px;
@@ -118,15 +119,12 @@ a {
 /* -------- Hero Area -------- */
 .hero-area .row {
     display: flex;
+    align-items: center;
 }
 
 .hero-info,
 .hero-banner {
     width: 50%;
-}
-
-.hero-info {
-    align-self: center;
 }
 
 .hero-heading {
@@ -227,15 +225,85 @@ a {
 .product-image {
     width: 100%;
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .product-ratings {
     display: flex;
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-.shipping-n-stock {
+.product-rating-stars span {
+    color: #ffbd00;
+}
+
+.star-count {
+    margin-left: 5px;
+    color: var(--secondary-text-color);
+}
+
+.devider {
+    margin-left: 10px;
+}
+
+.ratings-count {
+    margin-left: 10px;
+}
+
+.stock {
+    color: #008a00;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stock span {
+    margin-right: 5px;
+}
+
+.shipping {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.shipping span {
+    margin-right: 5px;
+}
+
+.buyer-protection {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+
+.buyer-protection span {
+    margin-right: 5px;
+}
+
+.secondary-button {
+    margin: 0 50px;
+    color: var(--primary-color);
+    font-weight: 500;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.secondary-button span {
+    margin-left: 10px;
 }
 
 /* -------- Featured Area -------- */
