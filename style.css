@@ -37,6 +37,14 @@ a {
     margin: 0 auto;
 }
 
+.button span {
+    transition: transform 0.3s;
+}
+
+.button:hover span {
+    transform: translateX(8px);
+}
+
 .primary-button {
     background: var(--primary-color);
     color: var(--text-white);
@@ -176,6 +184,8 @@ a {
 
 .hero-image {
     max-width: 500px;
+    animation: floating 3.5s ease-in-out 0.1s infinite alternate;
+    transition: transform 0.2s;
 }
 
 /* -------- Partner Brand Area ------- */
@@ -372,6 +382,7 @@ a {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .social-icon span {
@@ -381,6 +392,25 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* ========= Animation ======= */
+
+/* Animation for hero image */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
 }
 
 
