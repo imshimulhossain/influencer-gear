@@ -422,24 +422,21 @@ img {
 /* ======== @ Media Queries ========  */
 
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
-        width: 85%;
+        width: 90%;
     }
 
     .mb-50 {
         margin-bottom: 50px;
     }
 
-    .primary-button {
-        font-size: 20px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-radius: 30px;
-    }
-
     /* -------- Header Area -------- */
     .navbar {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .hamburger-toggler {
@@ -459,8 +456,7 @@ img {
     }
 
     .utility-menu-item {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 0 10px;
     }
 
     .utility-menu-list-item:first-child .utility-menu-item {
@@ -484,12 +480,8 @@ img {
     }
 
     .hero-heading {
-        font-size: 36px;
+        font-size: 28px;
         margin-bottom: 15px;
-    }
-
-    .hero-description {
-        font-size: 18px;
     }
 
     .hero-image-container {
@@ -539,6 +531,8 @@ img {
         grid-template-columns: repeat(1, 1fr);
         margin: 0;
         margin-bottom: 30px;
+        gap: 0;
+        row-gap: 30px;
     }
 
     .secondary-button {
@@ -566,10 +560,7 @@ img {
 
     .featured-title {
         margin-bottom: 15px;
-    }
-
-    .featured-description {
-        font-size: 18px;
+        font-size: 28px;
     }
 }
 
