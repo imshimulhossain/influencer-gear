@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .mb-100 {
     margin-bottom: 100px;
 }
@@ -74,6 +78,7 @@ a {
 
 .hamburger-toggler {
     display: none;
+    font-size: 24px;
 }
 
 .logo {
@@ -208,7 +213,7 @@ a {
     padding-bottom: 20px;
 }
 
-.logo-list-item img {
+.partner-logo-img {
     padding: 10px 20px;
 }
 
@@ -413,5 +418,159 @@ a {
 
 }
 
+
+/* ======== @ Media Queries ========  */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 85%;
+    }
+
+    .mb-50 {
+        margin-bottom: 50px;
+    }
+
+    .primary-button {
+        font-size: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 30px;
+    }
+
+    /* -------- Header Area -------- */
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .hamburger-toggler {
+        display: block;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .utility-menu-list {
+        margin-left: 0;
+    }
+
+    .utility-menu-list-item:nth-child(2) {
+        display: none;
+    }
+
+    .utility-menu-item {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .utility-menu-list-item:first-child .utility-menu-item {
+        padding-left: 0;
+    }
+
+
+    /* ------- Hero Area ------- */
+    .hero-area .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero-info,
+    .hero-banner {
+        width: 100%;
+    }
+
+    .hero-info {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .hero-heading {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .hero-image-container {
+        justify-content: center;
+    }
+
+    .hero-image-bg-border {
+        max-width: 360px;
+        max-height: 360px;
+    }
+
+    .hero-image-bg-solid {
+        max-width: 240px;
+        max-height: 240px;
+    }
+
+    .hero-image {
+        max-width: 300px;
+    }
+
+    /* ------- Partner Brand Area ------- */
+    .brand-logos {
+        margin: 0;
+    }
+
+    .horizontal-bordar {
+        display: none;
+    }
+
+    .logo-list {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding: 0;
+    }
+
+    .partner-logo-img {
+        padding: 10px;
+        height: 45px;
+    }
+
+    /* -------- Product Area -------- */
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .product-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .secondary-button {
+        margin: 0;
+    }
+
+    /* -------- Featured Area ------- */
+    .featured-area .row {
+        flex-direction: column-reverse;
+    }
+
+    .featured-thumbnail {
+        width: 100%;
+    }
+
+    .featured-products,
+    .featured-info {
+        width: 100%;
+    }
+
+    .featured-info {
+        text-align: center;
+
+    }
+
+    .featured-title {
+        margin-bottom: 15px;
+    }
+
+    .featured-description {
+        font-size: 18px;
+    }
+}
 
 /* -------- End ------- */
