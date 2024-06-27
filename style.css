@@ -489,16 +489,16 @@ img {
     }
 
     .hero-image-bg-border {
-        padding: 50px;
+        padding: 40px;
     }
 
     .hero-image-bg-solid {
-        max-width: 240px;
-        max-height: 240px;
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .hero-image {
-        max-width: 300px;
+        max-width: 270px;
     }
 
     /* ------- Partner Brand Area ------- */
