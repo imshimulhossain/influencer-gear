@@ -489,8 +489,7 @@ img {
     }
 
     .hero-image-bg-border {
-        max-width: 360px;
-        max-height: 360px;
+        padding: 50px;
     }
 
     .hero-image-bg-solid {
